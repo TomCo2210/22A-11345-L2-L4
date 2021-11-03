@@ -1,89 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical">
-
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="20"/>
-
-    <ProgressBar
-        android:id="@+id/main_PRG_time"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"/>
+    tools:context=".Activities.MainActivity">
 
     <ImageView
-        android:id="@+id/main_IMG_question"
+        android:id="@+id/main_IMG_background"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="40"
-        tools:srcCompat="@tools:sample/avatars" />
+        android:layout_height="match_parent"/>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:orientation="vertical"
-        android:layout_weight="40"
-        android:background="@color/yellow_200A">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20" />
+
+        <ProgressBar
+            android:id="@+id/main_PRG_time"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp" />
+
+        <ImageView
+            android:id="@+id/main_IMG_question"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="40"
+            tools:srcCompat="@tools:sample/avatars" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1"
-            android:layout_margin="16dp"
-            android:orientation="horizontal"
-            android:background="@color/teal_700">
+            android:layout_weight="40"
+            android:orientation="vertical">
+<!--            android:background="@color/yellow_200A"-->
 
-            <Button
-                android:id="@+id/main_BTN_answer1"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_margin="8dp"
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="16dp"
                 android:layout_weight="1"
-                android:text="Button" />
+                android:orientation="horizontal">
+<!--                android:background="@color/teal_700"-->
 
-            <Button
-                android:id="@+id/main_BTN_answer2"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_margin="8dp"
+                <Button
+                    android:id="@+id/main_BTN_answer1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:text="Button" />
+
+                <Button
+                    android:id="@+id/main_BTN_answer2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:text="Button" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="16dp"
                 android:layout_weight="1"
-                android:text="Button" />
-        </LinearLayout>
+                android:orientation="horizontal">
+<!--                android:background="@color/teal_700"-->
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:layout_margin="16dp"
-            android:orientation="horizontal"
-            android:background="@color/teal_700">
+                <Button
+                    android:id="@+id/main_BTN_answer3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:text="Button" />
 
-            <Button
-                android:id="@+id/main_BTN_answer3"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:layout_margin="8dp"
-                android:text="Button" />
-
-            <Button
-                android:id="@+id/main_BTN_answer4"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:layout_margin="8dp"
-                android:text="Button" />
+                <Button
+                    android:id="@+id/main_BTN_answer4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:text="Button" />
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
-</LinearLayout>
+</RelativeLayout>
